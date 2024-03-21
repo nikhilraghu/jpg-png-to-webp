@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/nikhilraghu/jpg-png-to-webp/style.css">
+</head>
+<body>
+    <div class="preloader"></div>
+
+    <section class="box">
+        <div class="container">
+            
+            <div style="margin-bottom: 50px;" class="heading">
+                <h1>JPG, PNG TO WEBP</h1>
+            </div>
+
+
+            <input type="file" id="imageUpload" multiple accept=".jpg, .png">
+            <button id="uploadBtn" onclick="uploadImage()">Upload Images</button>
+
+            <div id="preview"></div>
+            <input type="range" id="compressionSlider" min="0" max="100" value="50">
+            <span id="compressionValue">50%</span>
+
+            <div id="sizeComparison"></div>
+            <!-- <button id="downloadBtn" onclick="downloadImages()">Download All Images</button> -->
+
+            <div style="text-align: center;">
+                <a href="#" id="downloadBtn" onclick="downloadImages()">Download Images</a>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+
+    <footer style="text-align: center;">
+        <p>Copyright © 2024- All Rights Reserved By - Nikhil Raghuwanshi</p>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.5.0/jszip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/nikhilraghu/jpg-png-to-webp/script.js"></script>
+</body>
+</html>
