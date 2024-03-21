@@ -1,0 +1,115 @@
+/* Copyright Coding With Nick - Nikhil raghuwanshi */
+/* https://codingwithnick.in/ */
+
+/* Styles for the preloader */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff; /* You can change this to match your page's background color */
+    z-index: 9999; /* Make sure the preloader appears on top of other content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Customize the preloader animation */
+.preloader::after {
+    content: '';
+    width: 40px;
+    height: 40px;
+    border: 4px solid #3498db; /* Change the color as needed */
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 1s linear infinite; /* Adjust the animation duration as needed */
+}
+
+/* Preloader animation */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Other styles */
+
+.box {
+    padding-top: 100px;
+}
+
+.container {
+    border: 2px #b0abab dashed;
+    text-align: center;
+    background: #f0f0f0;
+    padding: 100px;
+    border-radius: 10px;
+}
+
+#imageUpload {
+    display: none;
+}
+
+#preview {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.preview-item {
+    margin-bottom: 10px;
+}
+
+.preview-image {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.image-name {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+#downloadBtn {
+    display: none;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 15px 40px;
+    border: none;
+    background: #727CF5;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+#compressionSlider {
+    margin-top: 20px;
+    width: 200px;
+}
+
+#sizeComparison {
+    margin-top: 10px;
+}
+
+#uploadBtn {
+    padding: 15px 40px;
+    border: none;
+    background: #727CF5;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+
+
+/* Copyright Coding With Nick - Nikhil raghuwanshi */
+/* https://codingwithnick.in/ */
