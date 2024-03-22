@@ -68,7 +68,7 @@ function downloadImages() {
                 zip.generateAsync({ type: "blob" }).then(function (content) {
                     const a = document.createElement('a');
                     a.href = URL.createObjectURL(content);
-                    a.download = "Convert-images-nikhil.zip";
+                    a.download = "Webp_image.zip";
                     a.click();
                 });
             }
